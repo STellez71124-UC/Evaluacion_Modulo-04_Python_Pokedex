@@ -38,7 +38,7 @@ while estabilidad <2: #Parámetro de control: Solicitud de información a PokéA
         print("Error de conexión. Por favor reinicie el programa.")
         exit() 
     except requests.exceptions.RequestException as reqerr: #Excepción generada al no existir término dentro de API. 
-        print(f"{creatura} no existe en la base de datos: {reqerr}")
+        print(f"{creatura.title()} no existe en la base de datos: {reqerr}")
         print("Realizando selección aleatoria de Pokémon.\n") #Reinicio automatizado de operación en base a catálogo de API.
         num_aleatorio = random.randint(1,1025) #Selección de número aleatorio
         creatura = num_aleatorio

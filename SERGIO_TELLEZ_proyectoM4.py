@@ -73,8 +73,8 @@ while estabilidad == 2:
     plt.axis(False) #Eliminación de lineas usadas en gráficas.
     descripcion =( #Estructura comprehensible de todos los datos capturados. Aplicación de mayúsculas y unión de texto en listas. 
         f"Nombre: {captura_pokemon["Nombre"].title()} | Tipos: {', '.join(captura_pokemon["Tipos"]).title()}\n"
-        f"Altura: {captura_pokemon["Altura"]/10} metros | Peso: {captura_pokemon["Peso"]/10} kilogramos | EXP: {captura_pokemon['Experiencia Base']}\n"
-        f"HP: {captura_pokemon["HP"]} | ATK: {captura_pokemon["Ataque"]} | DEF: {captura_pokemon["Defensa"]} | SP. ATK: {captura_pokemon['Ataque Especial']} | SP. DEF: {captura_pokemon["Defensa Especial"]} | VEL: {captura_pokemon['Velocidad']}\n"
+        f"Altura: {captura_pokemon["Altura"]} decimetros | Peso: {captura_pokemon["Peso"]} hectogramos  | EXP: {captura_pokemon['Experiencia Base']}\n"
+        f"HP: {captura_pokemon["HP"]} | ATK: {captura_pokemon["Ataque"]} | DEF: {captura_pokemon["Defensa"]} | SP. ATK: {captura_pokemon['Ataque Especial']} | SP. DEF: {captura_pokemon["Defensa Especial"]} | SPD: {captura_pokemon['Velocidad']}\n"
         f"Movimientos: {', '.join(random.sample(captura_pokemon ["Movimientos"], 4)).title()} \n" #Selección aleatoria de cuatro movimientos.
         f"Habilidades: {', '.join(captura_pokemon["Habilidades"]).title()}"
     )
